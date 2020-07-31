@@ -1,0 +1,960 @@
+.contendoParoCardiaco{
+    position: relative;
+    float: left;
+    width: 70%;
+    /* background-color: yellow; */
+    
+  }
+
+  .contendoParoCardiaco p{
+    margin: 0;
+    padding: 0;
+  }
+
+  .ppe{
+    position: absolute;
+    font-size: 0.2em;
+    border-radius: 5px;
+    border: solid 1px;
+    border-color:var(--resaltado);
+    left: 223px;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--this-color-rgba);
+    transition: all 2s;
+    top:-15px;
+  }
+
+  .ppe:hover{
+    background-color: var(--this-color-rgbaSolido);
+    z-index: 10;
+    transform: scale(5) translate(10%, 50%);
+  }
+
+  .inicioRCP{
+
+    position: absolute;
+    font-size: 0.2em;
+    border-radius: 5px;
+    border: solid 1px;
+    border-color:var(--resaltado);
+    left: 240px;
+    top: 45px;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--thir-color);
+    transition: all 2s;
+
+  }
+
+  .inicioRCP:hover{
+    background-color: var(--thir-colorSolido);
+    z-index: 10;
+    transform: scale(5) translate(10%, 50%);
+  }
+
+  .pririzarIntubacion{
+
+    position: absolute;
+    font-size: 0.2em;
+    border-radius: 5px;
+    border: solid 1px;
+    border-color:var(--resaltado);
+    left: 140px;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--this-color-rgba);
+    transition: all 2s;
+    top: 241px;
+
+  }
+
+  .pririzarIntubacion:hover{
+    background-color: var(--this-color-rgbaSolido);
+    z-index: 10;
+    transform: scale(3) translate(10%, 20%);
+  }
+
+  
+  .rayo_1:before,
+  .rayo_2:before,
+  .rayo_3:before{
+    content: '';
+    position: absolute;
+    width: 10px; 
+    height: 6px;
+    top: -6px;
+    left: -5px; 
+    /* border: 3px solid #555;  */
+    background:var(--resaltadoTabla);
+    transform: skew(-20deg);
+
+  }
+
+  .rayo_1:after,
+  .rayo_2:after,
+  .rayo_3:after{
+
+    content: '';
+    position: absolute;
+    top: 6px;
+    border-right: 8px solid transparent;
+    border-top: 10px solid var(--resaltadoTabla);
+  }
+
+  .rayo_1,
+  .rayo_2,
+  .rayo_3{
+    position: absolute; 
+     width: 10px; 
+     height: 6px; 
+     /* border: 3px solid #555;  */
+     background:var(--resaltadoTabla);
+     top: 209px;
+     left: 145px;
+     transform: skew(-20deg);
+     transition: all 2s;
+ 
+   }
+
+   .rayo_2{
+    position: absolute; 
+     top: 424px;
+     transform: skew(-20deg);
+    }
+
+    .rayo_3{
+      position: absolute; 
+       top: 573px;
+       transform: skew(-20deg);
+     }
+
+     /* .rayo_1:hover,
+     .rayo_2:hover,
+     .rayo_3:hover{
+      background-color: var(--resaltadoTabla);
+      z-index: 10;
+      transform: scale(3) translate(10%, 20%);
+    } */
+
+
+  .hexagono,
+  .hexagono_2,
+  .hexagono_3,
+  .hexagono_4,
+  .hexagono_5{
+
+    position: absolute;
+    font-size: 0.2em;
+    border-radius: 0;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    border-color:var(--resaltado);
+    left: 280px;
+    top: 115px;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--desfibrilable);
+    transition: all 2s;
+
+  }
+  
+  .hexagono:before,
+  .hexagono_2:before,
+  .hexagono_3:before,
+  .hexagono_4:before,
+  .hexagono_5:before {
+    border-top:18px solid transparent;
+    border-bottom:18px solid transparent;;
+    border-right:12px solid var(--desfibrilable);
+    content: '';
+    height:0;
+    
+    position: absolute;
+    right:59px;
+    bottom: -2px;
+    width: 0;
+  }
+  .hexagono:after,
+  .hexagono_2:after,
+  .hexagono_3:after,
+  .hexagono_4:after,
+  .hexagono_5:after {
+    border-top:18px solid transparent;
+    border-bottom:18px solid transparent;
+    border-left:12px solid var(--desfibrilable);
+    bottom:-2px;
+    content: '';
+    height:0;
+    left: 59px;
+    position: absolute;
+    right: 0;
+    width:0;
+  }
+
+  .hexagono_2 {
+    left: 120px;
+    top: 368px;
+  }
+
+  .hexagono_3 {
+    left: 120px;
+    top: 517px;
+  }
+
+  .hexagono_4 {
+    left: 450px;
+    top: 375px;
+  }
+
+  .hexagono_5 {
+    left: 450px;
+    top: 476px;
+  }
+
+  .hexagono:hover,
+  .hexagono_2:hover,
+  .hexagono_3:hover,
+  .hexagono_4:hover,
+  .hexagono_5:hover{
+
+    background-color: var( --desfibrilable);
+    z-index: 10;
+    transform: scale(5) translate(0%, 0%);
+
+  }
+
+  /* cuadros de fibrilación ventricular y taquicardia ventricular */
+  .ritmoFV{
+
+    position: absolute;
+    font-size: 0.4em;
+    border-radius: 5px;
+    border: solid 1px;
+    border-color:var(--resaltado);
+    left: 118px;
+    top: 152px;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--thir-color);
+    transition: all 2s;
+
+  }
+
+  .ritmoAsistolia{
+
+    position: absolute;
+    font-size: 0.4em;
+    border-radius: 5px;
+    border: solid 1px;
+    border-color:var(--resaltado);
+    left: 420px;
+    top: 152px;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--thir-color);
+    transition: all 2s;
+
+  }
+
+  .rcp_1{
+    position: absolute;
+    font-size: 0.25em;
+    border-radius: 5px;
+    border: solid 1px;
+    border-color:var(--resaltado);
+    left: 112px;
+    top: 313px;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--thir-color);
+    transition: all 2s;
+
+  }
+
+  .adrenalina_1{
+
+    position: absolute;
+    font-size: 0.2em;
+    border-radius: 5px;
+    border: solid 1px;
+    border-color:var(--resaltado);
+    left: 65px;
+    top: 455px;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--thir-color);
+    transition: all 2s;
+  }
+
+  .adrenalina_2{
+
+    position: absolute;
+    font-size: 0.2em;
+    border-radius: 5px;
+    border: solid 1px;
+    border-color:var(--resaltado);
+    left: 395px;
+    top: 314px;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--thir-color);
+    transition: all 2s;
+  }
+
+  .amiodarona_1{
+
+    position: absolute;
+    font-size: 0.2em;
+    border-radius: 5px;
+    border: solid 1px;
+    border-color:var(--resaltado);
+    left: 100px;
+    top: 603px;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--thir-color);
+    transition: all 2s;
+
+  }
+
+  .causasReversibles{
+    
+    position: absolute;
+    font-size: 0.2em;
+    border-radius: 5px;
+    border: solid 1px;
+    border-color:var(--resaltado);
+    left: 432px;
+    top: 425px;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--thir-color);
+    transition: all 2s;
+  }
+
+  .rce{
+
+    position: absolute;
+    font-size: 0.2em;
+    border-radius: 5px;
+    border: solid 1px;
+    border-color:var(--resaltado);
+    left: 250px;
+    top: 600px;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--thir-color);
+    transition: all 2s;
+
+  }
+
+  .esDesfibrilable{
+    position: absolute;
+    font-size: 0.2em;
+    border-radius: 5px;
+    border: solid 1px;
+    border-color:var(--resaltado);
+    left: 560px;
+    top: 600px;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--thir-color);
+    transition: all 2s;
+  }
+
+
+  .flecha_1,
+  .flecha_2,
+  .flecha_3,
+  .flecha_4,
+  .flecha_5,
+  .flecha_6,
+  .flecha_7,
+  .flecha_8,
+  .flecha_9,
+  .flecha_10,
+  .flecha_11,
+  .flecha_12,
+  .flecha_13,
+  .flecha_14,
+  .flecha_15,
+  .flecha_16,
+  .flecha_17,
+  .flecha_18{
+    background-color:var(--resaltado);
+    position: absolute;
+    margin: 20px 0 50 0;
+    width: 1.5px;
+   }
+
+   /* da la forma de la flecha */
+   .flecha_1:after,
+   .flecha_2:after,
+   .flecha_3:after,
+   .flecha_4:after,
+   .flecha_6:after,
+   .flecha_7:after,
+   .flecha_8:after,
+   .flecha_9:after,
+   .flecha_10:after,
+   .flecha_11:after,
+   .flecha_12:after,
+   .flecha_13:after,
+   .flecha_14:after,
+   .flecha_15:after,
+   .flecha_16:after,
+   .flecha_17:after,
+   .flecha_18:after{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -4px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: var(--resaltado) transparent transparent transparent;
+    border-width: 10px 5px;
+}
+
+
+.flecha_5:after{
+  content: '';
+  position: absolute;
+  top: 44px;
+  left: -4px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: var(--resaltado) transparent transparent transparent;
+  border-width: 10px 5px;
+}
+/* Posición de la cabeza de la flecha */
+.flecha_17:after{
+  top: 95px;
+}
+
+.flecha_17{
+  height: 95px;
+  left:382px;
+  top:493px;
+}
+
+.flecha_18:after{
+  top: 205px;
+}
+
+.flecha_18{
+  height: 205px;
+  left:290px;
+  top:384px;
+}
+ /* posicion de la flecha */
+.flecha_1{
+    height: 10px;
+    left:308px;
+    top:30px;
+}
+
+.flecha_2{
+    height: 10px;
+    left:308px;
+    top:100px;
+}
+
+.flecha_3{
+  height: 10px;
+  left:148px;
+  top:186px;
+}
+
+.flecha_4{
+  height: 10px;
+  left:148px;
+  top:225px;
+}
+
+.flecha_5{
+  height: 44px;
+  left:477px;
+  top:186px;
+}
+
+.flecha_6{
+  height: 10px;
+  left:148px;
+  top:298px;
+}
+
+.flecha_7{
+  height: 10px;
+  left:148px;
+  top:352px;
+}
+
+.flecha_8{
+  height: 10px;
+  left:148px;
+  top:402px;
+}
+
+.flecha_9{
+  height: 10px;
+  left:148px;
+  top:439px;
+}
+
+.flecha_10{
+  height: 10px;
+  left:148px;
+  top:501px;
+}
+
+.flecha_11{
+  height: 10px;
+  left:148px;
+  top:552px;
+}
+
+.flecha_12{
+  height: 10px;
+  left:148px;
+  top:588px;
+}
+
+.flecha_13{
+  height: 10px;
+  left:477px;
+  top:298px;
+}
+
+.flecha_14{
+  height: 10px;
+  left:477px;
+  top:359px;
+}
+
+.flecha_15{
+  height: 10px;
+  left:477px;
+  top:409px;
+}
+
+.flecha_16{
+  height: 10px;
+  left:477px;
+  top:460px;
+}
+
+.flechaDbleDerecha,
+.flechaDbleDerecha_2{
+  background-color:var(--resaltado);
+  height: 10px;
+  width: 2px;
+  left:475px;
+  top:131px;
+  position: absolute;
+  margin: 20px 0 50 0;
+  transition: all 3s;
+}
+
+.flechaDbleDerecha:after,
+.flechaDbleDerecha_2:after{
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -3.5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: var(--resaltado) transparent transparent transparent;
+  border-width: 10px 5px;
+}
+
+.flechaDbleDerecha:before,
+.flechaDbleDerecha_2:before{
+  content:'';
+  position: absolute;
+  background-color:var(--resaltado);
+  left:-125px;
+  width: 125px;
+  height:2px;  
+}
+
+.flechaDbleDerecha_2{
+  left: 577px;
+  top:391px;
+  height: 202px; 
+  width: 2px;
+}
+
+.flechaDbleDerecha_2:before{
+ left:-57px;
+ width: 58px;
+}
+
+.flechaDbleDerecha_2:after{
+  top: 198px;
+} 
+
+/* flecha izquierda */
+
+.flechaDbleIzquierda{
+  
+  background-color:var(--resaltado);
+  height: 10px;
+  width: 1px;
+  left:145px;
+  top:131px;
+  position: absolute;
+  margin: 20px 0 50 0;
+  transition: all 3s;
+}
+
+.flechaDbleIzquierda:after{
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -3.5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: var(--resaltado) transparent transparent transparent;
+  border-width: 10px 5px;
+}
+
+.flechaDbleIzquierda:before{
+  content:'';
+  position: absolute;
+  background-color:var(--resaltado);
+  left:0px;
+  width: 125px;
+  height:2px;  
+}
+
+.horizontal_1,
+.horizontal_2,
+.horizontal_3{
+
+  position: absolute;
+  background-color:var(--resaltado);
+  width: 58Px;
+  height: 2px;
+  top: 492px;
+  left: 382px;
+
+}
+
+.horizontal_2{
+
+  width: 100Px;
+  height: 2px;
+  top: 384px;
+  left: 190px;
+}
+
+.horizontal_3{
+
+  width: 70Px;
+  height: 2px;
+  top: 623px;
+  left: 30px;
+}
+
+.vertical_1{
+
+  position: absolute;
+  background-color:var(--resaltado);
+  width: 2Px;
+  height: 238px;
+  top: 385px;
+  left: 30px;
+
+}
+
+.flechaDerecha_1,
+.flechaDerecha_2,
+.flechaDerecha_3{
+  background-color:var(--resaltado);
+  position: absolute;
+  margin: 20px 0 50 0;
+  width: 74px;
+  height: 2px;
+  transition: all 3s;
+  top:384px;
+  left: 30px;
+}
+
+
+.flechaDerecha_1:after,
+.flechaDerecha_2:after,
+.flechaDerecha_3:after{
+
+  content: '';
+  position: absolute;
+  top:-5px;
+  left: 72px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color:  transparent transparent transparent var(--resaltado);
+  border-width: 6px 6px;
+}
+
+.flechaDerecha_2{
+  width: 94px;
+  top:533px;
+  left: 190px;
+}
+
+.flechaDerecha_2:after{
+  left: 94px;
+}
+
+.flechaDerecha_3{
+  width: 50px;
+  top:492px;
+  left: 520px;
+}
+
+.flechaDerecha_3:after{
+  left: 50px;
+}
+
+._1, ._2, ._3, ._4, ._5, ._6, ._7, ._8,
+._9, ._10, ._11, ._12{
+  position: absolute;
+  transition: all 3s;
+  font-size: 0.4em;
+  top:30px;
+  left: 230px;
+}
+
+._2{
+  top:150px;
+  left: 105px;
+}
+
+._3{
+  top:205px;
+  left: 130px;
+}
+
+._4{
+  top:300px;
+  left: 100px;
+}
+
+._5{
+  top:415px;
+  left: 130px;
+}
+
+._6{
+  top:445px;
+  left: 53px;
+}
+
+._7{
+  top:567px;
+  left: 130px;
+}
+
+._8{
+  top:595px;
+  left: 90px;
+}
+
+._9{
+  top:150px;
+  left: 408px;
+}
+
+._10{
+  top:305px;
+  left: 375px;
+}
+
+._11{
+  top:415px;
+  left: 410px;
+}
+
+._12{
+  top:590px;
+  left: 230px;
+}
+
+.si_1, .no_1, .si_2, .si_3, .si_4, .si_5,
+.no_2, .no_3, .no_4, .no_5{
+  position: absolute;
+  color:var(--resaltadoTabla);
+  transition: all 3s;
+  font-size: 0.5em;
+  top:108px;
+  left: 200px;
+
+}
+
+.no_1{
+  top:108px;
+  left: 395px;
+}
+
+.si_2{
+  top:403px;
+  left: 160px;
+}
+
+.si_3{
+  top:550px;
+  left: 160px;
+}
+
+.si_4{
+  top:368px;
+  left: 535px;
+}
+
+.si_5{
+  top:469px;
+  left: 535px;
+}
+
+.no_2{
+  top:361px;
+  left: 200px;
+}
+
+.no_3{
+  top:510px;
+  left: 200px;
+}
+
+.no_4{
+  top:404px;
+  left: 488px;
+}
+
+.no_5{
+  top:470px;
+  left: 400px;
+}
+
+.descarga_1,
+.descarga_2,
+.descarga_3{
+  position: absolute;
+  color:var(--resaltadoTabla);
+  transition: all 3s;
+  font-size: 0.4em;
+  top:200px;
+  left: 160px;
+  transition: all 2s;
+}
+
+.descarga_2{
+  top:422px;
+  left: 160px;
+}
+
+.descarga_3{
+  top:570px;
+  left: 160px;
+}
+
+.descarga_1:hover,
+.descarga_2:hover,
+.descarga_3:hover{
+  border-radius: 5px;
+  background-color: var( --resaltadoTabla);
+  color: var( --body-bg);
+  z-index: 10;
+  transform: scale(5) translate(0%, 0%);
+}
+
+.ritmoFV:hover,
+.ritmoAsistolia:hover,
+.rcp_1:hover,
+.adrenalina_2:hover,
+.causasReversibles:hover{ 
+  background-color: var(--thir-colorSolido);
+  z-index: 10;
+  transform: scale(5) translate(0%, 0%);
+}
+
+.adrenalina_1:hover{
+
+  background-color: var(--thir-colorSolido);
+  z-index: 10;
+  transform: scale(5) translate(20%, 0%);
+
+}
+
+.esDesfibrilable:hover,
+.amiodarona_1:hover{
+  background-color: var(--thir-colorSolido);
+  z-index: 10;
+  transform: scale(5) translate(0%, -50%);
+}
+
+.rce:hover{
+
+  background-color: var(--thir-colorSolido);
+  z-index: 10;
+  transform: scale(3) translate(0%, -50%);
+
+}
+
+.contenedorDetalles{
+  background-color: var(--thir-color);
+  position: relative;
+  width: 30%;
+  float: right;
+  padding: 10px;
+}
+
+.rcp_contenido{
+  background: var(--thir-colorSolido);
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+  transition: 0.5s !important;
+  padding: 1Px;
+}
+
+.rcp_contenido ul{
+  padding: 0 10px 0 10px;
+}
+
+.acordeon_rcp input{
+  display: none;
+}
+
+
+.acordeon_rcp{
+  margin: 0;
+  padding: 0;
+}
+
+.rcp_titulo{
+  display: block;
+  margin: 0;
+  padding: 0;
+  color: var(--resaltado);
+  font-size: .5em;
+  text-align: left;
+  cursor: pointer;
+  
+  /* border-bottom: 1px solid #fff;  */
+  
+  
+}
+
+.acordeon_rcp input:checked ~ .rcp_contenido{
+  height: auto;
+
+}
+
+
+  

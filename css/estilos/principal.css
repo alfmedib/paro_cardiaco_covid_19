@@ -1,0 +1,135 @@
+:root{
+    --resaltado: #0416b4;
+    --negro:#000;
+    --blanco:#fff;
+    --resaltadoTabla:#8B0000;
+    --desfibrilable:#e99797;
+    --encabezadoTabla: #2F4F4F;
+    --encabezado:#006400;
+    --text-color: #53575a;
+    --cuerpoTabla:#8FBC8F;
+    --body-bg:#FAFDFF;
+    --dark-color-alt:#141618;
+    --dark-color:#282D31;
+    --sombra:rgba(0, 0, 0, .65);
+    /* Amarillo  */
+    --this-color-rgba:rgba(231, 216, 5, 0.486); 
+    /* Azul celeste */
+    --thir-color:rgba(123, 219, 231, 0.486);
+    --thir-colorSolido:rgba(123, 219, 231);
+
+    --this-color-rgbaSolido:rgb(231, 216, 5);
+    --text-parrafo: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.titulo{
+    font-size: 3em;
+    text-transform: none !important;
+}
+
+.subtitulo{
+    
+    font-size: 1em !important;
+    text-transform: none !important;
+    text-align: left;
+    
+}
+
+.suprarayado{
+    border-top: 1px solid var(--resaltadoTabla);
+}
+
+.reveal p{
+    text-align: justify;
+    /* font-size: 36px; */
+}
+
+.suprarayado{
+    border-top: 1px solid var(--resaltadoTabla);
+}
+
+.parrafo{
+   
+    font-size: .4em !important;
+    text-align: left;
+    width: 100%;
+    box-shadow: 0px 0px 0px var(--thir-color-rgba) inset;
+    transition: 0.5s !important;
+}
+
+.parrafo p, .parrafo ul{
+    margin: 0 0;
+    padding: 0 10px 0 10px;
+}
+
+
+
+.textoIzq{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.8em;
+}
+
+.btn{
+    text-decoration: none;
+    line-clamp: 4;
+    padding: 4px;
+    color: #6a6a6a !important;
+    position: relative;
+    color: var(--resaltadoTabla) !important;
+    box-shadow: 0px 0px 0px var(--this-color-rgba) inset;
+    transition: 0.5s !important;
+    cursor: pointer;
+}
+
+.btn:before{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 3px;
+    background:var(--resaltadoTabla) !important;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition:  0.5s !important;
+    
+}
+
+.btn:hover{
+    box-shadow: 1500px 0px 0px var(--this-color-rgba) inset; 
+}
+
+.btn:hover:before{
+    width: 100%;
+}
+
+.resaltar{
+
+    font-size: 1em !important;
+    text-align: left;
+    width: 100%;
+    box-shadow: 0px 0px 0px  var(--sombra) inset;
+    transition: 0.5s !important;
+
+}
+
+.resaltar:hover{
+    font-size: 1.1em !important;
+    box-shadow: 1500px 0px 0px var(--this-color-rgba) inset;
+}
+
+ol li:hover{
+    background: var(--encabezado);
+    color: var(--body-bg);
+    padding: 5px;
+}
+ul li:hover{
+    background: var(--encabezado);
+    color: var(--body-bg);
+    padding: 5px;
+}
