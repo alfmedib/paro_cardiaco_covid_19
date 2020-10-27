@@ -19,7 +19,7 @@
 	</head>
 	<body>
 		<div class="reveal" id="cuerpo">
-			<div class="slides">
+			<div class="slides" id="slides">
 				<section id="titulo">
 					<h2 class="titulo suprarayado">Algoritmos - AHA con sospecha o confirmado Covid-19: Actualización Abril 2020</h2>
 					<p class="parrafo suprarayado textoIzq">Alfonso Médicis Benavides</p>
@@ -31,16 +31,18 @@
 
 						<div class="contendoParoCardiaco">
 
-							<div class="ppe">
+							<div class="ppe" id="ppe">
 								
-								<ul>Don PPE
+								<ul>
+									<li>EPP (Equipo de Protección Personal)</li>
 									<li>Limitar personal</li>
 									<li>Considere la conveniencia de la reanimación</li>
 								</ul>
 							</div>
 							<div class="flecha_1"></div>
 							<div class="inicioRCP">
-								<ul><strong>Iniciar RCP</strong>
+								<ul>
+									<li><strong>Iniciar RCP</strong></li>
 									<li>Dar oxígneo (limitar la aerolización)</li>
 									<li>Conectar monitor / desfibrilador</li>
 									<li>Prepárate para intubar</li>
@@ -62,8 +64,25 @@
 								<p><strong>FV / TV</strong></p>
 							</div>
 
+							<div class ="desfibrilable">
+								<p class="parrafo">Fibrilacion Ventricular</p>
+								<img src="img/FibrilacionVentricular.png" alt="Fibrilacion Ventricular" title="Fibrilación ventricular">
+								<p class="parrafo">Taquicardia Ventricular</p>
+								<img src="img/Taquicardia ventricular.png" alt="Taquicardia ventricular" title="Taquicardia ventricular">
+								<img src="img/Tosades de Poites.png" alt="Torsades de points" title="Torsades de points">
+							</div>
+
 							<div class="ritmoAsistolia">
 								Asistolia / AESP
+							</div>
+
+							<div class ="noDesfibrilable">
+								<img src="img/Asistolia.png" alt="Asistolia" title="Asistolia">
+								<img src="img/asistolia2.png" alt="Asistolia" title="Asistolia">
+								<img src="img/ActividadElectricaSinPulso.png" alt="Actividad Eléctrica Sin Pulso (AESP)" title="Actividad Eléctrica Sin Pulso (AESP)">
+
+								
+								
 							</div>
 
 							<div class="rayo_1"></div>
@@ -98,7 +117,7 @@
 
 							<div class="adrenalina_1">
 								<p><strong>RCP 2 minutos</strong></p>
-								<p>Adrenalina cada 3-5 minutos</p>
+								<p>Adrenalina 1 mg IV/IO cada 3-5 minutos</p>
 								<p>Considere dispositivo mecánico de compresión</p>
 							</div>
 
@@ -119,11 +138,21 @@
 								<p>Tratar causas reversibles</p>
 							</div>
 
+							<div class="dosisAmiodarona">
+								<ul class="parrafo">
+									
+									<li>Amiodarona: dosis IV/IO: primera dosis bolo de 300 mg. Segunda dosis 150 mg. o </li>
+									<li>Lidocaína dosis IV/IO: primera dosis 1 a 1.5 mg./kg. de peso. Segunda dosis: 0.5 a 0.75 mg./kg. de peso</li>
+									
+								</ul>
+							</div>
+
+
 							<div class="flecha_13"> </div>
 
 							<div class="adrenalina_2">
 								<p><strong>RCP 2 minutos</strong></p>
-								<p>Adrenalina cada 3-5 minutos</p>
+								<p>Adrenalina 1 mg IV/IO cada 3-5 minutos</p>
 								<p>Considere dispositivo mecánico de compresión</p>
 							</div>
 
@@ -196,9 +225,18 @@
 							<div class="no_4"><p>No</p></div>
 							<div class="no_5"><p>No</p></div>
 
-							<div class="descarga_1">Descarga</div>
-							<div class="descarga_2">Descarga</div>
-							<div class="descarga_3">Descarga</div>
+							
+							<div class="energiaDescarga">
+								<p class="parrafo"><strong>Energía de descarga para desfibrilación</strong></p>
+								<ul class="parrafo">
+									<li>
+										<p><strong>Bifásica:</strong> Recomendación del fabricante,</p>
+										<p>Dosis: iniciar con 120 - 200 J. </p>
+										<p>Si se desconoce, usar el valor máximo disponible</p>
+									</li>
+									<li><p><strong>Monofásico: </strong>360 j.</p></li>
+								</ul>
+							</div>
 
 						</div>
 
@@ -244,7 +282,7 @@
 									<ul>
 										<li>Bifásica: recomendación del fabricante (p. ej.; dosis inicial de 120 a 200 J). Si se desconoce, usar el valor máximo disponible. La segunda descarga y las posteriores deben ser equivalentes y puede considerarse la administración de valores superiores</li>
 
-										<li>Monofásica: 360 J</li>
+										<li>Monofásica: 360 J.</li>
 										
 									</ul>
 								</div>
@@ -257,7 +295,7 @@
 										<li>Adrenalina: dosis IV/IO 1 mg cada 3 - 5 minutos</li>
 
 										<li>Amiodarona: dosis IV/IO: primera dosis bolo de 300 mg. Segunda dosis 150 mg. o </li>
-										<li>Lidocaína dosis IV/IO: primera dosis 1 a 1.5 mg./kg. de peso. Segunda dosis: 05 a 0.75 mg./kg. de peso</li>
+										<li>Lidocaína dosis IV/IO: primera dosis 1 a 1.5 mg./kg. de peso. Segunda dosis: 0.5 a 0.75 mg./kg. de peso</li>
 										
 									</ul>
 								</div>
@@ -270,11 +308,9 @@
 										<li>Minimizar el circuíto cerrado de comunicación</li>
 										<li>Profesional que garantice intubar con la más alta probabilidad de éxito en la primera fase</li>
 										<li>Considere la videolaringoscopía</li>
-										<li>Intubación endotraqueal o vía aéra avanzada supraglótica</li>
+										<li>Intubación endotraqueal o vía aérea avanzada supraglótica</li>
 										<li>Capnografía para confirmar y supervisar colocación de tubo endotraqueal</li>
 										<li>Una vez que la vía aérea esté en su lugar dar 1 ventilación cada 6 segundos (10 ventilaciones por minuto) y compresiones torácicas continuas</li>
-
-										
 										
 									</ul>
 								</div>
@@ -297,6 +333,7 @@
 									</ul>
 								</div>
 						</div>
+						
 				</section>
 			</div>
 		</div>
@@ -325,6 +362,8 @@
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 		</script>
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/miJQuery.js"></script>
 		<script src="js/miJs.js"></script>
 	</body>
 </html>

@@ -17,6 +17,7 @@
     border-radius: 5px;
     border: solid 1px;
     border-color:var(--resaltado);
+    cursor: pointer;
     left: 223px;
     text-align: center;
     padding: 5px;
@@ -25,11 +26,14 @@
     top:-15px;
   }
 
-  .ppe:hover{
+  .ppe1{
     background-color: var(--this-color-rgbaSolido);
     z-index: 10;
     transform: scale(5) translate(10%, 50%);
+    opacity: 1;
   }
+
+  
 
   .inicioRCP{
 
@@ -38,6 +42,7 @@
     border-radius: 5px;
     border: solid 1px;
     border-color:var(--resaltado);
+    cursor: pointer;
     left: 240px;
     top: 45px;
     text-align: center;
@@ -47,7 +52,7 @@
 
   }
 
-  .inicioRCP:hover{
+  .inicioRCP1{
     background-color: var(--thir-colorSolido);
     z-index: 10;
     transform: scale(5) translate(10%, 50%);
@@ -60,6 +65,7 @@
     border-radius: 5px;
     border: solid 1px;
     border-color:var(--resaltado);
+    cursor: pointer;
     left: 140px;
     text-align: center;
     padding: 5px;
@@ -69,7 +75,7 @@
 
   }
 
-  .pririzarIntubacion:hover{
+  .pririzarIntubacion1{
     background-color: var(--this-color-rgbaSolido);
     z-index: 10;
     transform: scale(3) translate(10%, 20%);
@@ -110,6 +116,7 @@
      height: 6px; 
      /* border: 3px solid #555;  */
      background:var(--resaltadoTabla);
+     cursor: pointer;
      top: 209px;
      left: 145px;
      transform: skew(-20deg);
@@ -129,13 +136,13 @@
        transform: skew(-20deg);
      }
 
-     /* .rayo_1:hover,
-     .rayo_2:hover,
-     .rayo_3:hover{
+     .rayo_1lg,
+     .rayo2,
+     .rayo3{
       background-color: var(--resaltadoTabla);
       z-index: 10;
       transform: scale(3) translate(10%, 20%);
-    } */
+    } 
 
 
   .hexagono,
@@ -150,6 +157,7 @@
     border-top: solid 1px;
     border-bottom: solid 1px;
     border-color:var(--resaltado);
+    cursor: pointer;
     left: 280px;
     top: 115px;
     text-align: center;
@@ -212,11 +220,11 @@
     top: 476px;
   }
 
-  .hexagono:hover,
-  .hexagono_2:hover,
-  .hexagono_3:hover,
-  .hexagono_4:hover,
-  .hexagono_5:hover{
+  .hexagono1,
+  .hexagono2,
+  .hexagono3,
+  .hexagono4,
+  .hexagono5{
 
     background-color: var( --desfibrilable);
     z-index: 10;
@@ -232,6 +240,7 @@
     border-radius: 5px;
     border: solid 1px;
     border-color:var(--resaltado);
+    cursor: pointer;
     left: 118px;
     top: 152px;
     text-align: center;
@@ -248,6 +257,7 @@
     border-radius: 5px;
     border: solid 1px;
     border-color:var(--resaltado);
+    cursor: pointer;
     left: 420px;
     top: 152px;
     text-align: center;
@@ -263,6 +273,7 @@
     border-radius: 5px;
     border: solid 1px;
     border-color:var(--resaltado);
+    cursor: pointer;
     left: 112px;
     top: 313px;
     text-align: center;
@@ -279,6 +290,7 @@
     border-radius: 5px;
     border: solid 1px;
     border-color:var(--resaltado);
+    cursor: pointer;
     left: 65px;
     top: 455px;
     text-align: center;
@@ -294,6 +306,7 @@
     border-radius: 5px;
     border: solid 1px;
     border-color:var(--resaltado);
+    cursor: pointer;
     left: 395px;
     top: 314px;
     text-align: center;
@@ -309,6 +322,7 @@
     border-radius: 5px;
     border: solid 1px;
     border-color:var(--resaltado);
+    cursor: pointer;
     left: 100px;
     top: 603px;
     text-align: center;
@@ -325,6 +339,7 @@
     border-radius: 5px;
     border: solid 1px;
     border-color:var(--resaltado);
+    cursor: pointer;
     left: 432px;
     top: 425px;
     text-align: center;
@@ -340,6 +355,7 @@
     border-radius: 5px;
     border: solid 1px;
     border-color:var(--resaltado);
+    cursor: pointer;
     left: 250px;
     top: 600px;
     text-align: center;
@@ -355,6 +371,7 @@
     border-radius: 5px;
     border: solid 1px;
     border-color:var(--resaltado);
+    cursor: pointer;
     left: 560px;
     top: 600px;
     text-align: center;
@@ -841,49 +858,113 @@
   left: 400px;
 }
 
-.descarga_1,
-.descarga_2,
-.descarga_3{
-  position: absolute;
-  color:var(--resaltadoTabla);
-  transition: all 3s;
-  font-size: 0.4em;
-  top:200px;
-  left: 160px;
+
+.energiaDescarga{
+  display: none;
   transition: all 2s;
 }
 
-.descarga_2{
-  top:422px;
-  left: 160px;
-}
-
-.descarga_3{
-  top:570px;
-  left: 160px;
-}
-
-.descarga_1:hover,
-.descarga_2:hover,
-.descarga_3:hover{
+.energiaDescarga1{
+  display: block;
+  width: 65%;
+  
+  position: absolute;
   border-radius: 5px;
-  background-color: var( --resaltadoTabla);
-  color: var( --body-bg);
-  z-index: 10;
-  transform: scale(5) translate(0%, 0%);
+  border: solid 1px;
+  border-color:var(--resaltado);
+  left: 75px;
+  top: 250px;
+  text-align: center;
+  padding: 5px;
+  background-color: var(--thir-colorSolido);
+  transform: scale(1.5) translate(33%, 0%);
+  z-index:9;
 }
 
-.ritmoFV:hover,
-.ritmoAsistolia:hover,
-.rcp_1:hover,
-.adrenalina_2:hover,
-.causasReversibles:hover{ 
+.dosisAmiodarona{
+  display: none;
+}
+
+.dosisAmiodarona1{
+
+  display: block;
+  width: 65%;
+  
+  position: absolute;
+  border-radius: 5px;
+  border: solid 1px;
+  border-color:var(--resaltado);
+  left: 75px;
+  top: 250px;
+  text-align: center;
+  padding: 5px;
+  background-color: var(--thir-colorSolido);
+  transform: scale(1.5) translate(33%, 0%);
+  z-index:9;
+
+}
+
+
+.ritmoFV1,
+.ritmoAsistolia1,
+.rcp_1Lg,
+.adrenalina2,
+.causasReversiblesLg{ 
   background-color: var(--thir-colorSolido);
   z-index: 10;
   transform: scale(5) translate(0%, 0%);
 }
 
-.adrenalina_1:hover{
+.desfibrilable{
+  display: none;
+}
+
+.noDesfibrilable > img{
+  margin: 0;
+  padding: 0;
+}
+
+.noDesfibrilable{
+  display: none;
+}
+
+.desfibrilable1{
+
+  display: block;
+  height: Auto;
+  width: 70%;
+  position: absolute;
+  border-radius: 5px;
+  border: solid 1px;
+  border-color:var(--resaltado);
+  left: 290px;
+  top: -10px;
+  text-align: center;
+  padding: 5px;
+  background-color: var(--thir-colorSolido);
+  transition: all 2s;
+  z-index:9;
+}
+
+.noDesfibrilable1{
+
+  display: block;
+  position: absolute;
+  height: auto;
+  width: 70%;
+  border-radius: 5px;
+  border: solid 1px;
+  border-color:var(--resaltado);
+  left: -100px;
+  top: -30px;
+  text-align: center;
+  padding: 5px;
+  background-color: var(--thir-colorSolido);
+  transition: all 2s;
+  z-index:9;
+}
+
+.adrenalina1{
 
   background-color: var(--thir-colorSolido);
   z-index: 10;
@@ -891,14 +972,14 @@
 
 }
 
-.esDesfibrilable:hover,
-.amiodarona_1:hover{
+.esDesfibrilableLg,
+.amiodarona1{
   background-color: var(--thir-colorSolido);
   z-index: 10;
   transform: scale(5) translate(0%, -50%);
 }
 
-.rce:hover{
+.rceLg{
 
   background-color: var(--thir-colorSolido);
   z-index: 10;
@@ -955,6 +1036,29 @@
   height: auto;
 
 }
+
+/* ANIMACIONES */
+
+@keyframes oscurecer{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0.5;
+  }
+}
+
+.slidesA{
+  animation-name: oscurecer;
+  animation-duration: 2s;
+  opacity: 0.5;
+}
+
+
+
+
+
+
 
 
   
